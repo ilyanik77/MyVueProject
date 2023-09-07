@@ -4,8 +4,8 @@
         <div :class="[$style.header__content ,$style.container]">
             <div class="logo">
                 <a href="#">
-                    <img src="../assets/Logo.svg" alt="logo">
-                    <img src="../assets/Interno.svg" alt="logo">
+                    <img src="@/assets/Logo.svg" alt="logo">
+                    <img src="@/assets/Interno.svg" alt="logo">
                 </a>
     
             </div>

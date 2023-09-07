@@ -1,32 +1,27 @@
 <template>
   <div id="app">
     
-    <SiteHeader/>
-    <SiteBanner/>
-    <SiteBlog/>
-    <!-- <BlogArticle/> -->
-    <!-- <LatestPost/> -->
+    <!-- <HomePage/> -->
+    <BlogPage/>
+
+
 
   </div>
 </template>
 
 <script>
 
-import SiteHeader from '@/components/SiteHeader.vue'
-import SiteBanner from '@/components/SiteBanner.vue'
-import SiteBlog from '@/components/SiteBlog.vue'
-//import BlogArticle from './components/BlogArticle.vue'
-//import LatestPost from './components/LatestPost.vue'
+import BlogPage from './components/pages/BlogPage.vue';
+//import HomePage from './components/pages/HomePage.vue';
 
 export default {
   name: 'App',
   components: {
+
+    //HomePage,
+    BlogPage,
+
     
-    SiteHeader,
-    SiteBanner,
-    SiteBlog,
-    //BlogArticle,
-    //LatestPost
   }
 }
 </script>

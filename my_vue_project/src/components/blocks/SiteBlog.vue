@@ -15,6 +15,8 @@
                         :date="item.date"
             />
         </div>
+
+        <SitePagination/>
         
         
     </section>
@@ -23,12 +25,14 @@
 <script>
 import BlogArticle from '@/components/BlogArticle.vue'
 import LatestPost from '@/components/LatestPost.vue'
+import SitePagination from '@/components/SitePagination.vue'
 
 export default {
     name: 'SiteBlog',
     components: {
         LatestPost,
-        BlogArticle
+        BlogArticle,
+        SitePagination
     },
     data() {
         return {

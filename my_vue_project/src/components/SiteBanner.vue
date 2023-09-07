@@ -31,7 +31,7 @@ export default {
 
 .banner {
 
-background-image: url(../assets/Photo.jpg);
+background-image: url(@/assets/Photo.jpg);
 height: 356px;
 margin-top: 45px;
 margin-bottom: 200px;
