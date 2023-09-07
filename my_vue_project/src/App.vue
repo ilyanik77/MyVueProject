@@ -1,20 +1,32 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <siteHeader/>
+    
+    <SiteHeader/>
+    <SiteBanner/>
+    <SiteBlog/>
+    <!-- <BlogArticle/> -->
+    <!-- <LatestPost/> -->
+
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
-import siteHeader from './components/siteHeader.vue'
+
+import SiteHeader from '@/components/SiteHeader.vue'
+import SiteBanner from '@/components/SiteBanner.vue'
+import SiteBlog from '@/components/SiteBlog.vue'
+//import BlogArticle from './components/BlogArticle.vue'
+//import LatestPost from './components/LatestPost.vue'
 
 export default {
   name: 'App',
   components: {
-    // HelloWorld,
-    siteHeader
+    
+    SiteHeader,
+    SiteBanner,
+    SiteBlog,
+    //BlogArticle,
+    //LatestPost
   }
 }
 </script>
@@ -27,5 +39,19 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
 </style>
