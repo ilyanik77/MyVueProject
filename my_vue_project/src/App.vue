@@ -2,8 +2,10 @@
   <div id="app">
     
     <!-- <HomePage/> -->
-    <BlogPage/>
-
+    <!-- <BlogPage/> -->
+    <!-- <BlogMain/> -->
+    <!-- <BlogMain/> -->
+    <NotFound />
 
 
   </div>
@@ -11,18 +13,19 @@
 
 <script>
 
-import BlogPage from './components/pages/BlogPage.vue';
+//import BlogPage from './components/pages/BlogPage.vue';
 //import HomePage from './components/pages/HomePage.vue';
+//import BlogMain from './components/pages/BlogMain.vue';
+import NotFound from './components/pages/NotFound.vue';
 
 export default {
   name: 'App',
   components: {
-
     //HomePage,
-    BlogPage,
-
-    
-  }
+    //BlogPage,
+    //BlogMain,
+    NotFound
+}
 }
 </script>
 

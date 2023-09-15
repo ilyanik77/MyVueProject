@@ -4,8 +4,10 @@
         <div :class="[$style.content, $style.container]">
             <div :class="$style.content__interno">
                 <div :class="$style.logo">
-                    <a href="#"><img src="@/assets/Logo.svg" alt="logo"></a>
-                    <img src="@/assets/Interno.svg" alt="logo">
+                    <a href="#">
+                        <img src="@/assets/Logo.svg" alt="logo">
+                        <img src="@/assets/Interno.svg" alt="logo">
+                    </a>
                 </div>
                 <p :class="$style.content__interno__text">
                     It is a long established fact that a reader will be distracted lookings.
