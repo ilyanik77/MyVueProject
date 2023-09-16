@@ -7,7 +7,7 @@
                 </h2>
                 <p>
                     <a href="#">Home</a>
-                    
+                    /
                     <a href="#">Blog</a>
                 </p>
             </div>

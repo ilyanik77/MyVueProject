@@ -10,7 +10,8 @@
                     We are sorry, but the page
                     you requested was not found
                 </p>
-                <button :class="$style.content__button">
+                <button :class="$style.content__button"
+                        @click="message">
 
                     Back To Home
                     <img src="@/assets/vector.png" alt="">
@@ -29,6 +30,11 @@ import SiteHeader from '../blocks/SiteHeader.vue';
         name: 'NotFound',
         components: {
             SiteHeader,
+        },
+        methods: {
+            message: function() {
+                console.log('Back To Home');
+            }
         }
     }
 </script>

@@ -1,14 +1,14 @@
 <template>
     
     <div :class="$style.item">
-        <img :class="$style.item__img" :src="src" alt="">
+        <img :class="$style.item__img" :src="img" alt="">
             <div :class="$style.item__description">
                 <div :class="$style.item__description-text">
                     <h3 :class="$style.item__title">
                         {{ title }}
                     </h3>
                     <p :class="$style.item__text">
-                        {{ text }}
+                        {{ section }}
                     </p>
                 </div>
                 <img src="../assets/_.svg" alt="">
@@ -21,14 +21,19 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
     export default {
         name: 'ProjectItem',
         props: {
             src: String,
             title: String,
-            text: String
+            section: String
 
 
+        },
+        computed: {
+            ...mapState(["projects", "buttons"]),
+            
         },
     }
 </script>
@@ -63,9 +68,10 @@
 
     &__description {
 
+        display: flex;
         justify-content: space-between;
         align-items: center;
-        display: flex;
+        text-align: left;
     }
 }
 

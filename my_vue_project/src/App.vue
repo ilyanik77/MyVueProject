@@ -5,8 +5,9 @@
     <!-- <BlogPage/> -->
     <!-- <BlogMain/> -->
     <!-- <BlogMain/> -->
-    <NotFound />
-
+    <!-- <NotFound /> -->
+    <ProjectPage />
+    
 
   </div>
 </template>
@@ -15,8 +16,11 @@
 
 //import BlogPage from './components/pages/BlogPage.vue';
 //import HomePage from './components/pages/HomePage.vue';
-//import BlogMain from './components/pages/BlogMain.vue';
-import NotFound from './components/pages/NotFound.vue';
+//import BlogDetailsPage from './components/pages/BlogDetailsPage.vue';
+//import NotFound from './components/pages/NotFound.vue';
+import ProjectPage from './components/pages/ProjectPage.vue'
+ 
+
 
 export default {
   name: 'App',
@@ -24,7 +28,9 @@ export default {
     //HomePage,
     //BlogPage,
     //BlogMain,
-    NotFound
+    //NotFound,
+    ProjectPage
+   
 }
 }
 </script>
