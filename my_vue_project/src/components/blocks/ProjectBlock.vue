@@ -30,41 +30,46 @@
 
 <script>
 import ProjectItem from '@/components/ProjectItem.vue'
-
+import { mapState } from "vuex";
     export default {
         name: 'ProjectBlock',
-        
-        data() {
-            return {
-                items: [
-                    {
-                    src: require('@/assets/1.jpg'), 
-                    title: 'Modern Kitchan', 
-                    text: 'Decor / Artchitecture'
-                    },
-                    {
-                    src: require('@/assets/2.jpg'), 
-                    title: 'Modern Kitchan', 
-                    text: 'Decor / Artchitecture'
-                    },
-                    {
-                    src: require('@/assets/3.jpg'), 
-                    title: 'Modern Kitchan', 
-                    text: 'Decor / Artchitecture'
-                    },
-                    {
-                    src: require('@/assets/4.jpg'), 
-                    title: 'Modern Kitchan', 
-                    text: 'Decor / Artchitecture'
-                    },
-                ]
-            }
-            
+        props: {
+            src: String,
+            title: String,
+            text: String
+
+
         },
         components: {
             ProjectItem,
-        }
+        },
+
+
+        computed: {
+            ...mapState(["items"]),
+            
+        },
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 </script>
 
 <style lang="scss" module>

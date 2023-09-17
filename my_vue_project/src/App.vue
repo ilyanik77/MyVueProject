@@ -1,12 +1,9 @@
 <template>
   <div id="app">
     
-    <!-- <HomePage/> -->
-    <!-- <BlogPage/> -->
-    <!-- <BlogMain/> -->
-    <!-- <BlogMain/> -->
-    <!-- <NotFound /> -->
-    <ProjectPage />
+    
+
+    <router-view />
     
 
   </div>
@@ -14,24 +11,19 @@
 
 <script>
 
-//import BlogPage from './components/pages/BlogPage.vue';
-//import HomePage from './components/pages/HomePage.vue';
-//import BlogDetailsPage from './components/pages/BlogDetailsPage.vue';
-//import NotFound from './components/pages/NotFound.vue';
-import ProjectPage from './components/pages/ProjectPage.vue'
- 
+
 
 
 export default {
   name: 'App',
   components: {
-    //HomePage,
-    //BlogPage,
-    //BlogMain,
-    //NotFound,
-    ProjectPage
+    
    
-}
+  },
+  created () {
+    this.$router.push({ name: 'homePage' })
+    //this.setPaymentsListData(this.fetchData())
+  }
 }
 </script>
 

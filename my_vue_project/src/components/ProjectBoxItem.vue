@@ -8,10 +8,11 @@
                         {{ title }}
                     </h3>
                     <p :class="$style.item__text">
-                        {{ text }}
+                        {{ section }}
                     </p>
                 </div>
-                <img src="../assets/_.svg" alt="">
+                <a href="#"><img src="../assets/_.svg" alt=""></a>
+                
 
             </div>
 
@@ -21,9 +22,13 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
+
     export default {
-        name: 'ProjectItem',
+        name: 'ProjectBoxItem',
+        data() {
+            return {};
+        },
+        
         props: {
             src: String,
             title: String,
@@ -32,10 +37,7 @@ import { mapState } from "vuex";
 
 
         },
-        computed: {
-            ...mapState(["projects", "buttons"]),
-            
-        },
+        
     }
 </script>
 

@@ -11,7 +11,14 @@
                     There are many variations of the passages of
                     lorem Ipsum fromavailable, majority.
                 </p>
-                <a :class="$style.intro__link" href="#">Get Started <img class="intro__link__svg" src="img/Vector.svg" alt=""></a>
+                <button :class="$style.intro__link">
+
+                    Get Started
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17" fill="none">
+                        <path d="M2 8.43529L15.7232 8.29844M10.6182 1.91125L17.1412 8.43424L10.4868 15.0886" stroke="#CDA274" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                
 
 
             </div>
@@ -54,6 +61,7 @@
 
         max-width: 434px;
         margin-left: 52px;
+        text-align: left;
 
         &__title {
 
@@ -95,7 +103,7 @@
             border-radius: 20px;
             align-items: baseline;
 
-            &__svg {
+            & svg {
                 width: 15px;
                 margin-left: 10px;
             }

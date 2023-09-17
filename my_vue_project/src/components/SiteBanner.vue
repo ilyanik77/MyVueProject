@@ -6,9 +6,7 @@
                     Articles & News
                 </h2>
                 <p>
-                    <a href="#">Home</a>
-                    /
-                    <a href="#">Blog</a>
+                    Home / Blog
                 </p>
             </div>
         </div>
@@ -62,7 +60,7 @@ align-items: flex-end;
             font-style: normal;
         }
 
-        & a {
+        & p {
 
             color: #4D5053;
             font-size: 22px;

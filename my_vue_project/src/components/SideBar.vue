@@ -77,7 +77,6 @@ export default {
 .tags {
 
     text-align: left;
-    //width: 345px;
     gap: 24px;
 
     &__title {

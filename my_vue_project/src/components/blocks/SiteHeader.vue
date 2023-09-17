@@ -10,10 +10,14 @@
     
             </div>
             <nav :class="$style.menu">
-                <a :class="$style.menu__link" href="#">Home</a>
-                <a :class="$style.menu__link" href="#">Project</a>
-                <a :class="$style.menu__link" href="#">Blog</a>
+                <router-link :class="$style.menu__link" to="/HomePage">Home</router-link>
+                <router-link :class="$style.menu__link" to="/ProjectPage">Project</router-link>
+                <router-link :class="$style.menu__link" to="/BlogPage">Blog</router-link>
+
+
+                
             </nav>
+            
         </div>
 
     </header>

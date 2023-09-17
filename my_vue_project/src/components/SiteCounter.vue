@@ -11,7 +11,7 @@
                         Years Of Experiance
                     </h3>
                 </div>
-                <img src="img/Line.png" alt="">
+                <img src="../assets/Line.png" alt="">
 
                 <div :class="$style.counter__content__item">
                     <p>
@@ -21,7 +21,7 @@
                         Success Project
                     </h3>
                 </div>
-                <img src="img/Line.png" alt="">
+                <img src="../assets/Line.png" alt="">
 
                 <div :class="$style.counter__content__item">
                     <p>
@@ -31,7 +31,7 @@
                         Active Project
                     </h3>
                 </div>
-                <img src="img/Line.png" alt="">
+                <img src="../assets/Line.png" alt="">
 
                 <div :class="$style.counter__content__item">
                     <p>

@@ -1,5 +1,5 @@
 <template>
-    <section :class="$style.blog">
+    <section :class="[$style.blog, $style.container]">
 
         <LatestPost/>
         <h2 :class="$style.blog__title">
@@ -83,6 +83,11 @@ export default {
 </script>
 
 <style  module lang="scss">
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto
+}
 
 .blog {
 

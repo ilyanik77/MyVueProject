@@ -10,11 +10,12 @@
                     We are sorry, but the page
                     you requested was not found
                 </p>
-                <button :class="$style.content__button"
-                        @click="message">
+                <button :class="$style.content__button">
 
                     Back To Home
-                    <img src="@/assets/vector.png" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17" fill="none">
+                        <path d="M2 8.43529L15.7232 8.29844M10.6182 1.91125L17.1412 8.43424L10.4868 15.0886" stroke="#CDA274" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                    </svg>
                 </button>
             </div>
             <img :class="$style.content__img" src="@/assets/404.jpg" alt="photo">
@@ -32,9 +33,7 @@ import SiteHeader from '../blocks/SiteHeader.vue';
             SiteHeader,
         },
         methods: {
-            message: function() {
-                console.log('Back To Home');
-            }
+            
         }
     }
 </script>
@@ -97,6 +96,11 @@ import SiteHeader from '../blocks/SiteHeader.vue';
         padding: 26px 54px;
         align-items: center;
         gap: 10px;
+
+        & svg {
+
+            margin-left: 10px;
+        }
     }
 }
 

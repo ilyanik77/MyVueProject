@@ -6,9 +6,7 @@
                     Our Project
                 </h2>
                 <p>
-                    <a href="#">Home</a>
-                    /
-                    <a href="#">Project</a>
+                    Home / Project
                 </p>
             </div>
         </div>
@@ -63,7 +61,7 @@
                 color: #292F36;
             }
 
-            & a {
+            & p {
 
                 font-size: 22px;
                 font-style: normal;

@@ -12,7 +12,7 @@ export default new Vuex.Store({
             {
                 id: 1, 
                 tag: 'BedRoom', 
-                imgSrc: '../assets/project1.jpg',
+                imgSrc: require('../assets/project1.jpg'),
                 title: 'Minimal Bedroom',
                 section: 'Decor / Artchitecture',
                 slider: [
@@ -26,7 +26,7 @@ export default new Vuex.Store({
             {
                 id: 2, 
                 tag: 'BedRoom', 
-                imgSrc: '../assets/project5.jpg',
+                imgSrc: require('../assets/project5.jpg'),
                 title: 'Minimal Bedroom',
                 section: 'Decor / Artchitecture',
                 slider: [
@@ -40,7 +40,7 @@ export default new Vuex.Store({
             {
                 id: 3, 
                 tag: 'BedRoom', 
-                imgSrc: '../assets/project2.jpg',
+                imgSrc: require('../assets/project2.jpg'),
                 title: 'Classic Minimal Bedroom',
                 section: 'Decor / Artchitecture',
                 slider: [
@@ -54,7 +54,7 @@ export default new Vuex.Store({
             {
                 id: 4, 
                 tag: 'BedRoom', 
-                imgSrc: '../assets/project7.jpg',
+                imgSrc: require('../assets/project7.jpg'),
                 title: 'Modern Bedroom',
                 section: 'Decor / Artchitecture',
                 slider: [
@@ -68,7 +68,7 @@ export default new Vuex.Store({
             {
                 id: 5, 
                 tag: 'BedRoom', 
-                imgSrc: '../assets/project3.jpg',
+                imgSrc: require('../assets/project3.jpg'),
                 title: 'Minimal Bedroom table',
                 section: 'Decor / Artchitecture',
                 slider: [
@@ -82,7 +82,7 @@ export default new Vuex.Store({
             {
                 id: 6, 
                 tag: 'System Table', 
-                imgSrc: '../assets/systemTable/systemTable4.jpg',
+                imgSrc: require('../assets/systemTable/systemTable4.jpg'),
                 title: 'System Table',
                 section: 'Decor / Artchitecture',
                 slider: [
@@ -97,7 +97,7 @@ export default new Vuex.Store({
             {
                 id: 7, 
                 tag: 'Kitchan', 
-                imgSrc: '../assets/kitchan/Kitchan5.jpg',
+                imgSrc: require('../assets/kitchan/Kitchan5.jpg'),
                 title: 'Minimal Kitchan',
                 section: 'Decor / Artchitecture',
                 slider: [
@@ -112,7 +112,7 @@ export default new Vuex.Store({
             {
                 id: 8, 
                 tag: 'LivingArea', 
-                imgSrc: '../assets/livingArea/LivingArea7.jpg',
+                imgSrc: require('@/assets/livingArea/LivingArea7.jpg'),
                 title: 'Minimal LivingArea',
                 section: 'Decor / Artchitecture',
                 slider: [
@@ -133,6 +133,29 @@ export default new Vuex.Store({
             { id: 4, tag: 'LivingArea' },
             
         ],
+
+        items: [
+            {
+            src: require('@/assets/1.jpg'), 
+            title: 'Modern Kitchan', 
+            text: 'Decor / Artchitecture'
+            },
+            {
+            src: require('@/assets/2.jpg'), 
+            title: 'Modern Kitchan', 
+            text: 'Decor / Artchitecture'
+            },
+            {
+            src: require('@/assets/3.jpg'), 
+            title: 'Modern Kitchan', 
+            text: 'Decor / Artchitecture'
+            },
+            {
+            src: require('@/assets/4.jpg'), 
+            title: 'Modern Kitchan', 
+            text: 'Decor / Artchitecture'
+            },
+        ]
     } 
 
 })
