@@ -8,7 +8,14 @@
             <p >
                 {{ date }}
             </p>
-            <img src="../assets/_.svg" alt="">
+            <router-link
+                        
+                        :to="`/BlogPage/BlogDetailsPages`">
+                            <img src="../assets/_.svg" alt="">
+            </router-link>
+
+
+            
     
         </div>
     
@@ -22,7 +29,8 @@ export default {
     props: {
         src: String,
         title: String,
-        date: String
+        date: String,
+        id: Number
 
 
     }

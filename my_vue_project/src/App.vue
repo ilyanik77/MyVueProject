@@ -7,8 +7,9 @@
     
 
   </div>
+  
 </template>
-
+  
 <script>
 
 
@@ -22,7 +23,6 @@ export default {
   },
   created () {
     this.$router.push({ name: 'homePage' })
-    //this.setPaymentsListData(this.fetchData())
   }
 }
 </script>

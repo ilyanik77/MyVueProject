@@ -51,28 +51,14 @@ import { mapState } from "vuex";
         },
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 </script>
 
 <style lang="scss" module>
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto
+}
 
 .project {
 
@@ -112,6 +98,7 @@ import { mapState } from "vuex";
     &__items {
 
         display: grid;
+        box-sizing: border-box;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr );
         row-gap: 56px;

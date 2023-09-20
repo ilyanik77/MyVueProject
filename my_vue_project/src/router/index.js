@@ -5,6 +5,7 @@ import HomePage from '../components/pages/HomePage.vue'
 import BlogPage from '../components/pages/BlogPage.vue'
 import BlogDetailsPage from '../components/pages/BlogDetailsPage.vue'
 import ProjectPage from '../components/pages/ProjectPage.vue'
+import ProjectDetailsPage from '../components/pages/ProjectDetailsPage.vue'
 import NotFound from '../components/pages/NotFound.vue'
 
 Vue.use(router)
@@ -23,7 +24,7 @@ export default new router({
         component: BlogPage
         },
         {
-        path: '/BlogDetailsPages',
+        path: '/BlogPage/BlogDetailsPages',
         name: 'blogDetailsPages',
         component: BlogDetailsPage
         },
@@ -33,14 +34,16 @@ export default new router({
         component: ProjectPage
         },
         {
-        path: '/NotFound',
-        name: 'notFound',
+        path: '/ProjectPage/ProjectDetailsPage/:id',
+        name: 'projectDetailsPage',
+        component: ProjectDetailsPage
+        },
+        {
+        path: '*',
+        //name: 'notFound',
         component: NotFound
         },
-        // {
-        // path: "*",
-        // component: NotFound
-        // }
+
 
 
     ]

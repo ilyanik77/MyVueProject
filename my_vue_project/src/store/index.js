@@ -6,6 +6,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
 
     state: {
+        
 
         projects: [
 
@@ -24,7 +25,7 @@ export default new Vuex.Store({
                 In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamusipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim,gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitaeiaculisvd porta. Proin tincidunt ligula id purus porttitor`
             },
             {
-                id: 2, 
+                id: 5, 
                 tag: 'BedRoom', 
                 imgSrc: require('../assets/project5.jpg'),
                 title: 'Minimal Bedroom',
@@ -38,7 +39,7 @@ export default new Vuex.Store({
                 In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamusipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim,gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitaeiaculisvd porta. Proin tincidunt ligula id purus porttitor`
             },
             {
-                id: 3, 
+                id: 2, 
                 tag: 'BedRoom', 
                 imgSrc: require('../assets/project2.jpg'),
                 title: 'Classic Minimal Bedroom',
@@ -66,7 +67,7 @@ export default new Vuex.Store({
                 In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamusipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim,gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitaeiaculisvd porta. Proin tincidunt ligula id purus porttitor`
             },
             {
-                id: 5, 
+                id: 3, 
                 tag: 'BedRoom', 
                 imgSrc: require('../assets/project3.jpg'),
                 title: 'Minimal Bedroom table',
@@ -154,6 +155,101 @@ export default new Vuex.Store({
             src: require('@/assets/4.jpg'), 
             title: 'Modern Kitchan', 
             text: 'Decor / Artchitecture'
+            },
+        ],
+        
+        articles: [
+            {
+                id: 1,
+                title1: 'Let’s Get Solution For Building Construction Work',
+                title2: 'Design sprints are great',
+                date: '26 December,2022',
+                img1: require('../assets/photo1.jpg'),
+                img2: require('../assets/photo1.jpg'),
+                text1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. ',
+                text2: 'Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.',
+                text3: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+                text4: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+                text5: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+                text6: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+                text7: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+
+            },
+            {
+                id: 2,
+                title1: 'Low Cost Latest Invented Interior Designing Ideas.',
+                title2: 'Design sprints are great',
+                date: '26 December,2022',
+                img1: require('../assets/photo2.jpg'),
+                img2: require('../assets/photo2.jpg'),
+                text1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. ',
+                text2: 'Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.',
+                text3: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+                text4: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+                text5: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+                text6: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+                text7: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+            },
+            {
+                id: 3,
+                title1: 'Best For Any Office & Business Interior Solution',
+                title2: 'Design sprints are great',
+                date: '26 December,2022',
+                img1: require('../assets/photo3.jpg'),
+                img2: require('../assets/photo3.jpg'),
+                text1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. ',
+                text2: 'Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.',
+                text3: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+                text4: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+                text5: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+                text6: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+                text7: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+            },
+            {
+                id: 1,
+                title1: 'Let’s Get Solution For Building Construction Work',
+                title2: 'Design sprints are great',
+                date: '26 December,2022',
+                img1: require('../assets/photo4.jpg'),
+                img2: require('../assets/photo4.jpg'),
+                text1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. ',
+                text2: 'Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.',
+                text3: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+                text4: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+                text5: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+                text6: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+                text7: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+
+            },
+            {
+                id: 2,
+                title1: 'Low Cost Latest Invented Interior Designing Ideas.',
+                title2: 'Design sprints are great',
+                date: '26 December,2022',
+                img1: require('../assets/photo5.jpg'),
+                img2: require('../assets/photo5.jpg'),
+                text1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. ',
+                text2: 'Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.',
+                text3: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+                text4: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+                text5: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+                text6: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+                text7: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+            },
+            {
+                id: 3,
+                title1: 'Best For Any Office & Business Interior Solution',
+                title2: 'Design sprints are great',
+                date: '26 December,2022',
+                img1: require('../assets/photo6.jpg'),
+                img2: require('../assets/photo6.jpg'),
+                text1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. ',
+                text2: 'Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.',
+                text3: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+                text4: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+                text5: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+                text6: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+                text7: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
             },
         ]
     } 

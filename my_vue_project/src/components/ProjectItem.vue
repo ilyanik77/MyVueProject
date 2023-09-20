@@ -2,18 +2,19 @@
     
     <div :class="$style.item">
         <img :class="$style.item__img" :src="src" alt="photo">
-            <div :class="$style.item__description">
-                <div :class="$style.item__description-text">
-                    <h3 :class="$style.item__title">
-                        {{ title }}
-                    </h3>
-                    <p :class="$style.item__text">
-                        {{ text }}
-                    </p>
-                </div>
-                <img src="../assets/_.svg" alt="">
-
+        <div :class="$style.item__description">
+            <div :class="$style.item__description-text">
+                <h3 :class="$style.item__title">
+                    {{ title }}
+                </h3>
+                <p :class="$style.item__text">
+                    {{ text }}
+                </p>
             </div>
+            <img src="../assets/_.svg" alt="">
+
+        </div>
+        
 
                     
     </div>
@@ -22,6 +23,7 @@
 
 <script>
 import { mapState } from "vuex";
+
     export default {
         name: 'ProjectItem',
         props: {
@@ -32,6 +34,7 @@ import { mapState } from "vuex";
 
 
         },
+        
         computed: {
             ...mapState(["projects", "buttons"]),
             
@@ -45,7 +48,7 @@ import { mapState } from "vuex";
 
     &__img {
         margin-bottom: 24px;
-        width: 624px;
+        width: 525px;
     }
 
     &__title {

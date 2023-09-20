@@ -2,7 +2,6 @@
     <div>
         <SiteHeader />
         <ProjectBanner />
-        <ProjectButtonBox />
         <ProjectPageBox />
 
         <SitePagination />
@@ -16,7 +15,6 @@ import { mapState } from "vuex"
 import SiteHeader from '../blocks/SiteHeader.vue'
 import SiteFooter from '../blocks/SiteFooter.vue'
 import ProjectBanner from '../ProjectBanner.vue'
-import ProjectButtonBox from '../ProjectButtonBox.vue'
 import ProjectPageBox from '../blocks/ProjectPageBox.vue'
 import SitePagination from '../SitePagination.vue'
 
@@ -26,7 +24,6 @@ import SitePagination from '../SitePagination.vue'
             SiteHeader,
             SiteFooter,
             ProjectBanner,
-            ProjectButtonBox,
             ProjectPageBox,
             SitePagination
         },

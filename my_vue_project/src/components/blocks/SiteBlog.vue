@@ -13,6 +13,7 @@
                         :title="item.title"
                         :src="item.src"
                         :date="item.date"
+                        :id="item.id"
             />
         </div>
 

@@ -2,19 +2,22 @@
     
     <div :class="$style.item">
         <img :class="$style.item__img" :src="src" alt="photo">
-            <div :class="$style.item__description">
-                <div :class="$style.item__description-text">
-                    <h3 :class="$style.item__title">
-                        {{ title }}
-                    </h3>
-                    <p :class="$style.item__text">
-                        {{ section }}
-                    </p>
-                </div>
-                <a href="#"><img src="../assets/_.svg" alt=""></a>
+        <div :class="$style.item__description">
+            <div :class="$style.item__description-text">
+                <h3 :class="$style.item__title">
+                    {{ title }}
+                </h3>
+                <p :class="$style.item__text">
+                    {{ section }}
+                </p>
+            </div>
+            <router-link :to="`/ProjectPage/ProjectDetailsPage/${id}`">
+                <img src="../assets/_.svg" alt="">
+            </router-link>
+                
                 
 
-            </div>
+        </div>
 
                     
     </div>
@@ -28,15 +31,17 @@
         data() {
             return {};
         },
-        
         props: {
             src: String,
             title: String,
             section: String,
-            text: String
+            text: String,
+            tag: String,
+            id: Number
 
 
         },
+        
         
     }
 </script>
@@ -45,9 +50,14 @@
 
 .item {
 
+    width: 600px;
+    padding: 10px;
+    box-sizing: border-box;
+
     &__img {
         margin-bottom: 24px;
-        width: 624px;
+        width: 580px;
+        
     }
 
     &__title {
