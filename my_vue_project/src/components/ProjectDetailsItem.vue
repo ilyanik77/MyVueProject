@@ -10,6 +10,7 @@
                 :class="$style.content__box"
                 :title="project.title"
                 :text="project.text"
+                
             >
 
                 <h2 :class="$style.content__title">
@@ -18,7 +19,40 @@
                 <p  :class="$style.content__text">
                     {{ project.text }}
                 </p> 
-                <img :src="project.imgSrc"  alt="">
+                
+                <div :class="$style.content__slider">
+                    <div 
+                        :class="$style.content__slider__box"
+                        :style="{ 'margin-left': '-' + 100 * indexPhoto + '%' }"
+                    >
+                        <div 
+                            v-for="(image, index) in project.slider"
+                            :key="index"
+                            
+                        
+                        >
+                        <img :src="image.img"/>
+                    
+                    
+                    </div>
+                    </div>
+                    
+                    
+                </div>
+                <div>
+                    <button 
+                        :class="$style.content__slider__button" 
+                        @click="prev">
+                        prev
+                    </button>
+                    <button 
+                        :class="$style.content__slider__button" 
+                        @click="next">
+                        next
+                    </button>
+                </div>
+                
+                
 
             </div>
         </div>
@@ -30,10 +64,42 @@ import { mapState } from "vuex"
 
     export default {
         name : 'ProjectDetailsItem',
-        props: ["project", "selectedProject"],
+        components: {
+
+        },
+        data() {
+            return {
+                indexPhoto: 0
+            }
+        }, 
+                    
+        methods: {
+            next(indexPhoto) {
+                if(this.indexPhoto >= 0 && this.indexPhoto < 2) {
+                    
+                    this.indexPhoto ++
+                } else {
+                    this.indexPhoto = 0
+                }
+                
+                console.log(this.indexPhoto);
+                return indexPhoto
+            },
+            prev(indexPhoto) {
+                if(this.indexPhoto <= 0) {
+                    
+                    this.indexPhoto = 2
+                } else {
+                    this.indexPhoto --
+                }
+                
+                console.log(this.indexPhoto);
+                return indexPhoto
+            },
+        },
 
         computed: {
-            ...mapState(["projects", "currentIndex"]),
+            ...mapState(["projects"]),
             selectProject() {
 
                 return this.projects.filter((project) => project.id === Number(this.$route.params.id));
@@ -68,6 +134,27 @@ import { mapState } from "vuex"
             height: 799px;
             margin-bottom: 46px;
             border-radius: 50px;
+        }
+
+        
+    }
+
+    &__slider {
+
+        
+        max-width: 1200px;
+        overflow: hidden;
+
+        &__box {
+
+            display: flex;
+        }
+
+        &__button {
+
+            padding: 10px 15px;
+            font-size: 25px;
+            margin-right: 10px;
         }
     }
 
@@ -114,6 +201,10 @@ import { mapState } from "vuex"
             font-family: DM Serif Display;
         }
     }
+
+    
 }
+
+
 
 </style>

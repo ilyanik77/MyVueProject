@@ -7,6 +7,7 @@ export default new Vuex.Store({
 
     state: {
         currentIndex: null,
+        currentIndexPhoto: 0,
 
         projects: [
 
@@ -17,9 +18,9 @@ export default new Vuex.Store({
                 title: 'Minimal Bedroom',
                 section: 'Decor / Artchitecture',
                 slider: [
-                    { name: "foto1", img: '../assets/bedroom/slide1.jpg' },
-                    { name: "foto2", img: '../assets/bedroom/slide2.jpg' },
-                    { name: "foto3", img: '../assets/bedroom/slide3.jpg' },
+                    {img: require('../assets/bedroom/slide1.jpg') },
+                    {img: require('../assets/bedroom/slide2.jpg') },
+                    {img: require('../assets/bedroom/slide3.jpg') },
                 ],
                 text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
                 In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamusipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim,gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitaeiaculisvd porta. Proin tincidunt ligula id purus porttitor`
@@ -31,9 +32,9 @@ export default new Vuex.Store({
                 title: 'Minimal Bedroom',
                 section: 'Decor / Artchitecture',
                 slider: [
-                    { name: "foto1", img: '../assets/bedroom/slide4.jpg' },
-                    { name: "foto2", img: '../assets/bedroom/slide5.jpg' },
-                    { name: "foto3", img: '../assets/bedroom/slide6.jpg' },
+                    {img: require('../assets/bedroom/slide4.jpg') },
+                    {img: require('../assets/bedroom/slide5.jpg') },
+                    {img: require('../assets/bedroom/slide6.jpg') },
                 ],
                 text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
                 In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamusipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim,gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitaeiaculisvd porta. Proin tincidunt ligula id purus porttitor`
@@ -45,9 +46,9 @@ export default new Vuex.Store({
                 title: 'Classic Minimal Bedroom',
                 section: 'Decor / Artchitecture',
                 slider: [
-                    { name: "foto1", img: '../assets/bedroom/slide7.jpg' },
-                    { name: "foto2", img: '../assets/bedroom/slide8.jpg' },
-                    { name: "foto3", img: '../assets/bedroom/slide9.jpg' },
+                    {img: require('../assets/bedroom/slide7.jpg') },
+                    {img: require('../assets/bedroom/slide8.jpg') },
+                    {img: require('../assets/bedroom/slide9.jpg') },
                 ],
                 text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
                 In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamusipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim,gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitaeiaculisvd porta. Proin tincidunt ligula id purus porttitor`
@@ -59,9 +60,9 @@ export default new Vuex.Store({
                 title: 'Modern Bedroom',
                 section: 'Decor / Artchitecture',
                 slider: [
-                    { name: "foto1", img: '../assets/bedroom/slide1.jpg' },
-                    { name: "foto2", img: '../assets/bedroom/slide2.jpg' },
-                    { name: "foto3", img: '../assets/bedroom/slide9.jpg' },
+                    {img: require('../assets/bedroom/slide1.jpg') },
+                    {img: require('../assets/bedroom/slide2.jpg') },
+                    {img: require('../assets/bedroom/slide9.jpg') },
                 ],
                 text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
                 In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamusipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim,gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitaeiaculisvd porta. Proin tincidunt ligula id purus porttitor`
@@ -73,9 +74,9 @@ export default new Vuex.Store({
                 title: 'Minimal Bedroom table',
                 section: 'Decor / Artchitecture',
                 slider: [
-                    { name: "foto1", img: '../assets/bedroom/slide3.jpg' },
-                    { name: "foto2", img: '../assets/bedroom/slide2.jpg' },
-                    { name: "foto3", img: '../assets/bedroom/slide6.jpg' },
+                    {img: require('../assets/bedroom/slide3.jpg') },
+                    {img: require('../assets/bedroom/slide2.jpg') },
+                    {img: require('../assets/bedroom/slide6.jpg') },
                 ],
                 text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
                 In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamusipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim,gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitaeiaculisvd porta. Proin tincidunt ligula id purus porttitor`
@@ -87,9 +88,9 @@ export default new Vuex.Store({
                 title: 'System Table',
                 section: 'Decor / Artchitecture',
                 slider: [
-                    { name: "foto1", img: '../assets/systemTable/systemTable1.jpg' },
-                    { name: "foto2", img: '../assets/systemTable/systemTable2.jpg' },
-                    { name: "foto3", img: '../assets/systemTable/systemTable3.jpg' },
+                    {img: require('../assets/systemTable/systemTable1.jpg') },
+                    {img: require('../assets/systemTable/systemTable2.jpg') },
+                    {img: require('../assets/systemTable/systemTable3.jpg') },
                 ],
                 text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
 
@@ -102,9 +103,9 @@ export default new Vuex.Store({
                 title: 'Minimal Kitchan',
                 section: 'Decor / Artchitecture',
                 slider: [
-                    { name: "foto1", img: '../assets/kitchan/Kitchan1.jpg' },
-                    { name: "foto2", img: '../assets/kitchan/Kitchan2.jpg' },
-                    { name: "foto3", img: '../assets/kitchan/Kitchan3.jpg' },
+                    {img: require('../assets/kitchan/Kitchan1.jpg') },
+                    {img: require('../assets/kitchan/Kitchan2.jpg') },
+                    {img: require('../assets/kitchan/Kitchan3.jpg') },
                 ],
                 text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
 
@@ -117,9 +118,9 @@ export default new Vuex.Store({
                 title: 'Minimal LivingArea',
                 section: 'Decor / Artchitecture',
                 slider: [
-                    { name: "foto1", img: '../assets/livingArea/LivingArea1.jpg' },
-                    { name: "foto2", img: '../assets/livingArea/LivingArea2.jpg' },
-                    { name: "foto3", img: '../assets/livingArea/LivingArea3.jpg' },
+                    {img: require('@/assets/livingArea/LivingArea1.jpg') },
+                    {img: require('@/assets/livingArea/LivingArea2.jpg') },
+                    {img: require('@/assets/livingArea/LivingArea3.jpg') },
                 ],
                 text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
 
