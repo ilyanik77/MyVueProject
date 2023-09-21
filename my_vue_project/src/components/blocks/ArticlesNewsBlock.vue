@@ -12,11 +12,11 @@
             <div :class="$style.blog__content__items">
 
                 <ArticlesNewsBlockItem
-                                        v-for="(item, index) in items"
-                                        :key="index"
-                                        :title="item.title"
-                                        :data="item.data"
-                                        :src="item.src"
+                    v-for="(item, index) in items"
+                    :key="index"
+                    :title="item.title"
+                    :data="item.data"
+                    :src="item.src"
                 />
 
                 

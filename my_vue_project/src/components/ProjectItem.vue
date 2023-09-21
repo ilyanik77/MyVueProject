@@ -22,23 +22,16 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
-
     export default {
         name: 'ProjectItem',
         props: {
             src: String,
             title: String,
-            section: String,
             text: String
 
 
         },
-        
-        computed: {
-            ...mapState(["projects", "buttons"]),
-            
-        },
+
     }
 </script>
 

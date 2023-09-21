@@ -2,6 +2,7 @@
     
     <article :class="$style.item">
         <img :class="$style.item__img" :src="src" alt="">
+        <p>{{  }}</p>
         <h3 :class="$style.item__title">
             {{ title }}
         </h3>

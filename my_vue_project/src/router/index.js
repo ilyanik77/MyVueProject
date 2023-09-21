@@ -40,7 +40,6 @@ export default new router({
         },
         {
         path: '*',
-        //name: 'notFound',
         component: NotFound
         },
 
