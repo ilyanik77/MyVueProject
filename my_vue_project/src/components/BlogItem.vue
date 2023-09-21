@@ -1,64 +1,80 @@
 <template>
+
     <div :class="[$style.content, $style.container]">
-        <h2 :class="$style.content__title">
-            Let’s Get Solution for Building
-            Construction Work
-        </h2>
-        <img :class="$style.content__img" src='../assets/156.jpg' alt="photo">
 
-        <div :class="$style.content__date">
-            <p>
-                26 December,2022 
-            </p>
-            <p>
-                Interior / Home / Decore
-            </p>
-        </div>
-        <div :class="$style.content__text">
-            <p>
-                Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don't look even slightly believable.
-
-                Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.
-            </p>
-            <QuotesBlog />
+        <div
+            v-for="article in selectArticle"
+            :key="article.id"
+        >
             <h2 :class="$style.content__title">
-                Design sprints are great
+                {{ article.title1 }}
             </h2>
-            <p>
-                Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
-            </p>
-            <ol :class="$style.content__list">
-                <li>
-                    Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
-                </li>
-                <li>
-                    Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
-                </li>
-                <li>
-                    Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
-                </li>
-            </ol>
+            <img :class="$style.content__img" :src="article.img1" alt="photo">
 
-            <img :class="$style.content__img" src="../assets/photo7.jpg" alt="">
-            <p>
-                Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
-            </p>
+            <div :class="$style.content__date">
+                <p>
+                    {{ article.date }}
+                </p>
+                <p>
+                    Interior / Home / Decore
+                </p>
+            </div>
 
+            <div :class="$style.content__text">
+                <p>
+                    {{ article.text1 }}
+                </p>
+                <QuotesBlog />
+                <h2 :class="$style.content__title">
+                    {{ article.title2 }}
+                </h2>
+                <p>
+                    {{ article.text2 }}
+                </p>
+                <ol :class="$style.content__list">
+                    <li>
+                        {{ article.text4 }}
+                    </li>
+                    <li>
+                        {{ article.text5 }}
+                    </li>
+                    <li>
+                        {{ article.text6 }}
+                    </li>
+                </ol>
+
+                <img :class="$style.content__img" :src="article.img2" alt="">
+                <p>
+                    {{ article.text7 }}
+                </p>
+
+            </div>
         </div>
-        
-
-
 
     </div>
+    
+
+    
 </template>
 
 <script>
+import { mapState } from 'vuex'
 import QuotesBlog from '../components/QuotesBlog.vue'
 
     export default {
         name: 'BlogItem',
+        props:{
+            
+        },
         components: {
             QuotesBlog,
+        },
+        computed: {
+            ...mapState(["articles", "buttons"]),
+            selectArticle() {
+
+                return this.articles.filter((article) => article.id === Number(this.$route.params.id));
+            },
         }
 
     }
@@ -89,6 +105,7 @@ import QuotesBlog from '../components/QuotesBlog.vue'
 
         margin-bottom: 46px;
         border-radius: 50px;
+        width: 800px;
     }
 
     &__date {

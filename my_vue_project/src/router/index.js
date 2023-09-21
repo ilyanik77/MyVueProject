@@ -24,7 +24,7 @@ export default new router({
         component: BlogPage
         },
         {
-        path: '/BlogPage/BlogDetailsPages',
+        path: '/BlogPage/BlogDetailsPages/:id',
         name: 'blogDetailsPages',
         component: BlogDetailsPage
         },

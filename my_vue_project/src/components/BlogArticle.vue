@@ -10,7 +10,7 @@
             </p>
             <router-link
                         
-                        :to="`/BlogPage/BlogDetailsPages`">
+                        :to="`/BlogPage/BlogDetailsPages/${id}`">
                             <img src="../assets/_.svg" alt="">
             </router-link>
 
@@ -24,6 +24,8 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
     name: 'BlogArticle',
     props: {
@@ -33,7 +35,11 @@ export default {
         id: Number
 
 
-    }
+    },
+    computed: {
+        ...mapState(["projects", "buttons"]),
+            
+    },
 }
 </script>
 

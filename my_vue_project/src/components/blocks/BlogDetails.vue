@@ -1,7 +1,9 @@
 <template>
     <div :class="[$style.content, $style.container]">
         <div :class="$style.content__items">
-            <BlogItem />
+            <BlogItem 
+                
+            />
         </div>
         <div :class="$style.content__tags">
             <SideBar />
@@ -11,14 +13,23 @@
 </template>
 
 <script>
+//import { mapState } from 'vuex'
 import BlogItem from '../BlogItem.vue';
 import SideBar from '../SideBar.vue';
 
     export default {
         name: 'BlogDetails',
+        
         components: {
             BlogItem,
             SideBar
+        },
+        computed: {
+            //...mapState(["articles", "buttons"]),
+            selectArticle() {
+
+                return this.articles.filter((article) => article.id === Number(this.$route.params.id));
+            },
         }
         
     }

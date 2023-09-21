@@ -207,7 +207,7 @@ export default new Vuex.Store({
                 text7: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
             },
             {
-                id: 1,
+                id: 4,
                 title1: 'Let’s Get Solution For Building Construction Work',
                 title2: 'Design sprints are great',
                 date: '26 December,2022',
@@ -223,7 +223,7 @@ export default new Vuex.Store({
 
             },
             {
-                id: 2,
+                id: 5,
                 title1: 'Low Cost Latest Invented Interior Designing Ideas.',
                 title2: 'Design sprints are great',
                 date: '26 December,2022',
@@ -238,7 +238,7 @@ export default new Vuex.Store({
                 text7: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
             },
             {
-                id: 3,
+                id: 6,
                 title1: 'Best For Any Office & Business Interior Solution',
                 title2: 'Design sprints are great',
                 date: '26 December,2022',
