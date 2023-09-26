@@ -20,22 +20,22 @@ export default new router({
         },
         {
         path: '/BlogPage',
-        name: 'blogPage',
         component: BlogPage
         },
         {
         path: '/BlogPage/BlogDetailsPages/:id',
-        name: 'blogDetailsPages',
         component: BlogDetailsPage
         },
         {
         path: '/ProjectPage',
-        name: 'projectPage',
+        component: ProjectPage,
+        },
+        {
+        path: '/ProjectPage/:page',
         component: ProjectPage
         },
         {
         path: '/ProjectPage/ProjectDetailsPage/:id',
-        name: 'projectDetailsPage',
         component: ProjectDetailsPage
         },
         {

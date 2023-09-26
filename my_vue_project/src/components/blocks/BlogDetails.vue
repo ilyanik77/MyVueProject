@@ -13,7 +13,6 @@
 </template>
 
 <script>
-//import { mapState } from 'vuex'
 import BlogItem from '../BlogItem.vue';
 import SideBar from '../SideBar.vue';
 
@@ -25,11 +24,7 @@ import SideBar from '../SideBar.vue';
             SideBar
         },
         computed: {
-            //...mapState(["articles", "buttons"]),
-            selectArticle() {
-
-                return this.articles.filter((article) => article.id === Number(this.$route.params.id));
-            },
+            
         }
         
     }

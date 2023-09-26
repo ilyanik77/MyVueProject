@@ -8,8 +8,7 @@
                 v-for="project in selectProject"
                 :key="project.id"
                 :class="$style.content__box"
-                :title="project.title"
-                :text="project.text"
+                
                 
             >
 
@@ -31,7 +30,7 @@
                             
                         
                         >
-                        <img :src="image.img"/>
+                        <img :src="image"/>
                     
                     
                     </div>
@@ -69,12 +68,16 @@ import { mapState } from "vuex"
         },
         data() {
             return {
-                indexPhoto: 0
+                indexPhoto: 0,
+                countPhoto: 0,
+                
             }
         }, 
                     
         methods: {
             next(indexPhoto) {
+
+                
                 if(this.indexPhoto >= 0 && this.indexPhoto < 2) {
                     
                     this.indexPhoto ++
@@ -82,7 +85,7 @@ import { mapState } from "vuex"
                     this.indexPhoto = 0
                 }
                 
-                console.log(this.indexPhoto);
+                
                 return indexPhoto
             },
             prev(indexPhoto) {
@@ -93,7 +96,7 @@ import { mapState } from "vuex"
                     this.indexPhoto --
                 }
                 
-                console.log(this.indexPhoto);
+                
                 return indexPhoto
             },
         },
@@ -148,6 +151,8 @@ import { mapState } from "vuex"
         &__box {
 
             display: flex;
+            transition: all ease 1s;
+            
         }
 
         &__button {

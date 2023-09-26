@@ -4,10 +4,14 @@ import Vuex from 'vuex'
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-
+    
     state: {
         currentIndex: null,
         currentIndexPhoto: 0,
+        currentPage: 1,
+        itemsPerPage: 8,
+        pageCount: 0,
+        projectCount: 0,
 
         projects: [
 
@@ -18,9 +22,9 @@ export default new Vuex.Store({
                 title: 'Minimal Bedroom',
                 section: 'Decor / Artchitecture',
                 slider: [
-                    {img: require('../assets/bedroom/slide1.jpg') },
-                    {img: require('../assets/bedroom/slide2.jpg') },
-                    {img: require('../assets/bedroom/slide3.jpg') },
+                    require('../assets/bedroom/slide1.jpg'),
+                    require('../assets/bedroom/slide2.jpg'),
+                    require('../assets/bedroom/slide3.jpg') 
                 ],
                 text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
                 In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamusipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim,gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitaeiaculisvd porta. Proin tincidunt ligula id purus porttitor`
@@ -32,9 +36,9 @@ export default new Vuex.Store({
                 title: 'Minimal Bedroom',
                 section: 'Decor / Artchitecture',
                 slider: [
-                    {img: require('../assets/bedroom/slide4.jpg') },
-                    {img: require('../assets/bedroom/slide5.jpg') },
-                    {img: require('../assets/bedroom/slide6.jpg') },
+                    require('../assets/bedroom/slide4.jpg'),
+                    require('../assets/bedroom/slide5.jpg'),
+                    require('../assets/bedroom/slide6.jpg') 
                 ],
                 text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
                 In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamusipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim,gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitaeiaculisvd porta. Proin tincidunt ligula id purus porttitor`
@@ -46,9 +50,9 @@ export default new Vuex.Store({
                 title: 'Classic Minimal Bedroom',
                 section: 'Decor / Artchitecture',
                 slider: [
-                    {img: require('../assets/bedroom/slide7.jpg') },
-                    {img: require('../assets/bedroom/slide8.jpg') },
-                    {img: require('../assets/bedroom/slide9.jpg') },
+                    require('../assets/bedroom/slide7.jpg'),
+                    require('../assets/bedroom/slide8.jpg'),
+                    require('../assets/bedroom/slide9.jpg') 
                 ],
                 text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
                 In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamusipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim,gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitaeiaculisvd porta. Proin tincidunt ligula id purus porttitor`
@@ -60,9 +64,9 @@ export default new Vuex.Store({
                 title: 'Modern Bedroom',
                 section: 'Decor / Artchitecture',
                 slider: [
-                    {img: require('../assets/bedroom/slide1.jpg') },
-                    {img: require('../assets/bedroom/slide2.jpg') },
-                    {img: require('../assets/bedroom/slide9.jpg') },
+                    require('../assets/bedroom/slide1.jpg'),
+                    require('../assets/bedroom/slide2.jpg'),
+                    require('../assets/bedroom/slide9.jpg') 
                 ],
                 text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
                 In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamusipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim,gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitaeiaculisvd porta. Proin tincidunt ligula id purus porttitor`
@@ -74,9 +78,9 @@ export default new Vuex.Store({
                 title: 'Minimal Bedroom table',
                 section: 'Decor / Artchitecture',
                 slider: [
-                    {img: require('../assets/bedroom/slide3.jpg') },
-                    {img: require('../assets/bedroom/slide2.jpg') },
-                    {img: require('../assets/bedroom/slide6.jpg') },
+                    require('../assets/bedroom/slide3.jpg'),
+                    require('../assets/bedroom/slide2.jpg'),
+                    require('../assets/bedroom/slide6.jpg') 
                 ],
                 text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
                 In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamusipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim,gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitaeiaculisvd porta. Proin tincidunt ligula id purus porttitor`
@@ -88,9 +92,9 @@ export default new Vuex.Store({
                 title: 'System Table',
                 section: 'Decor / Artchitecture',
                 slider: [
-                    {img: require('../assets/systemTable/systemTable1.jpg') },
-                    {img: require('../assets/systemTable/systemTable2.jpg') },
-                    {img: require('../assets/systemTable/systemTable3.jpg') },
+                    require('../assets/systemTable/systemTable1.jpg'),
+                    require('../assets/systemTable/systemTable2.jpg'),
+                    require('../assets/systemTable/systemTable3.jpg') 
                 ],
                 text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
 
@@ -103,9 +107,9 @@ export default new Vuex.Store({
                 title: 'Minimal Kitchan',
                 section: 'Decor / Artchitecture',
                 slider: [
-                    {img: require('../assets/kitchan/Kitchan1.jpg') },
-                    {img: require('../assets/kitchan/Kitchan2.jpg') },
-                    {img: require('../assets/kitchan/Kitchan3.jpg') },
+                    require('../assets/kitchan/Kitchan1.jpg'),
+                    require('../assets/kitchan/Kitchan2.jpg'),
+                    require('../assets/kitchan/Kitchan3.jpg') 
                 ],
                 text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
 
@@ -118,14 +122,150 @@ export default new Vuex.Store({
                 title: 'Minimal LivingArea',
                 section: 'Decor / Artchitecture',
                 slider: [
-                    {img: require('@/assets/livingArea/LivingArea1.jpg') },
-                    {img: require('@/assets/livingArea/LivingArea2.jpg') },
-                    {img: require('@/assets/livingArea/LivingArea3.jpg') },
+                    require('@/assets/livingArea/LivingArea1.jpg'),
+                    require('@/assets/livingArea/LivingArea2.jpg'),
+                    require('@/assets/livingArea/LivingArea3.jpg') 
                 ],
                 text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
 
                 In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor`
             },
+            {
+                id: 9, 
+                tag: 'BedRoom', 
+                imgSrc: require('../assets/project1.jpg'),
+                title: 'Minimal Bedroom',
+                section: 'Decor / Artchitecture',
+                slider: [
+                    require('../assets/bedroom/slide1.jpg'),
+                    require('../assets/bedroom/slide2.jpg'),
+                    require('../assets/bedroom/slide3.jpg') 
+                ],
+                text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
+                In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamusipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim,gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitaeiaculisvd porta. Proin tincidunt ligula id purus porttitor`
+            },
+            {
+                id: 10, 
+                tag: 'BedRoom', 
+                imgSrc: require('../assets/project5.jpg'),
+                title: 'Minimal Bedroom',
+                section: 'Decor / Artchitecture',
+                slider: [
+                    require('../assets/bedroom/slide4.jpg'),
+                    require('../assets/bedroom/slide5.jpg'),
+                    require('../assets/bedroom/slide6.jpg') 
+                ],
+                text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
+                In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamusipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim,gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitaeiaculisvd porta. Proin tincidunt ligula id purus porttitor`
+            },
+            {
+                id: 11, 
+                tag: 'BedRoom', 
+                imgSrc: require('../assets/project2.jpg'),
+                title: 'Classic Minimal Bedroom',
+                section: 'Decor / Artchitecture',
+                slider: [
+                    require('../assets/bedroom/slide7.jpg'),
+                    require('../assets/bedroom/slide8.jpg'),
+                    require('../assets/bedroom/slide9.jpg') 
+                ],
+                text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
+                In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamusipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim,gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitaeiaculisvd porta. Proin tincidunt ligula id purus porttitor`
+            },
+            {
+                id: 12, 
+                tag: 'BedRoom', 
+                imgSrc: require('../assets/project7.jpg'),
+                title: 'Modern Bedroom',
+                section: 'Decor / Artchitecture',
+                slider: [
+                    require('../assets/bedroom/slide1.jpg'),
+                    require('../assets/bedroom/slide2.jpg'),
+                    require('../assets/bedroom/slide9.jpg') 
+                ],
+                text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
+                In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamusipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim,gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitaeiaculisvd porta. Proin tincidunt ligula id purus porttitor`
+            },
+            {
+                id: 13, 
+                tag: 'BedRoom', 
+                imgSrc: require('../assets/project3.jpg'),
+                title: 'Minimal Bedroom table',
+                section: 'Decor / Artchitecture',
+                slider: [
+                    require('../assets/bedroom/slide3.jpg'),
+                    require('../assets/bedroom/slide2.jpg'),
+                    require('../assets/bedroom/slide6.jpg') 
+                ],
+                text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
+                In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamusipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim,gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitaeiaculisvd porta. Proin tincidunt ligula id purus porttitor`
+            },
+            {
+                id: 14, 
+                tag: 'System Table', 
+                imgSrc: require('../assets/systemTable/systemTable4.jpg'),
+                title: 'System Table',
+                section: 'Decor / Artchitecture',
+                slider: [
+                    require('../assets/systemTable/systemTable1.jpg'),
+                    require('../assets/systemTable/systemTable2.jpg'),
+                    require('../assets/systemTable/systemTable3.jpg') 
+                ],
+                text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
+
+                In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor`
+            },
+            {
+                id: 15, 
+                tag: 'Kitchan', 
+                imgSrc: require('../assets/kitchan/Kitchan5.jpg'),
+                title: 'Minimal Kitchan',
+                section: 'Decor / Artchitecture',
+                slider: [
+                    require('../assets/kitchan/Kitchan1.jpg'),
+                    require('../assets/kitchan/Kitchan2.jpg'),
+                    require('../assets/kitchan/Kitchan3.jpg') 
+                ],
+                text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
+
+                In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor`
+            },
+            {
+                id: 16, 
+                tag: 'Kitchan', 
+                imgSrc: require('../assets/kitchan/Kitchan5.jpg'),
+                title: 'Minimal Kitchan',
+                section: 'Decor / Artchitecture',
+                slider: [
+                    require('../assets/kitchan/Kitchan1.jpg'),
+                    require('../assets/kitchan/Kitchan2.jpg'),
+                    require('../assets/kitchan/Kitchan3.jpg') 
+                ],
+                text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
+
+                In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor`
+            },
+            {
+                id: 17, 
+                tag: 'Kitchan', 
+                imgSrc: require('../assets/kitchan/Kitchan5.jpg'),
+                title: 'Minimal Kitchan',
+                section: 'Decor / Artchitecture',
+                slider: [
+                    require('../assets/kitchan/Kitchan1.jpg'),
+                    require('../assets/kitchan/Kitchan2.jpg'),
+                    require('../assets/kitchan/Kitchan3.jpg') 
+                ],
+                text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. 
+
+                In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor`
+            },
+          
+
+
+
+
+
         ],
 
         buttons: [
