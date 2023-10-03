@@ -11,7 +11,9 @@
                     {{ text }}
                 </p>
             </div>
-            <img src="../assets/_.svg" alt="">
+            <!-- <router-link :to="`/ProjectPage/ProjectDetailsPage/${this.id}`">
+                <img src="@/assets/_.svg" alt="">
+            </router-link> -->
 
         </div>
         

@@ -78,7 +78,7 @@ import { mapState } from 'vuex'
     export default {
         name: 'ProjectPageBox',
         props: {
-            
+            text: String,
         },
         data() {
             return {
@@ -95,20 +95,20 @@ import { mapState } from 'vuex'
             
         },
         computed: {
-            ...mapState(["projects", "buttons", "itemsPerPage", "pageCount", "projectCount"]),
+            ...mapState(["projects", "buttons", "projectsPerPage", "pageCount", "projectCount"]),
             
             currentProductList() {
-                const {currentPage, itemsPerPage} = this;
-                const startIndex = (currentPage - 1) * itemsPerPage;
-                const endIndex = startIndex + itemsPerPage;
+                const {currentPage, projectsPerPage} = this;
+                const startIndex = (currentPage - 1) * projectsPerPage;
+                const endIndex = startIndex + projectsPerPage;
 
                 return this.projects.slice(startIndex, endIndex)
             },
             getPageCount() {
 
-                let {pageCount, itemsPerPage} = this;
+                let {pageCount, projectsPerPage} = this;
                 
-                pageCount = Math.ceil(this.getProjectsLength / itemsPerPage)
+                pageCount = Math.ceil(this.getProjectsLength / projectsPerPage)
         
                 return pageCount
             },
@@ -121,15 +121,7 @@ import { mapState } from 'vuex'
                 
             },
 
-            // getCurrentPage() {
-
-            //     let {currentPage} = this;
-
-            //     //pageCount = Math.ceil(this.getProjectsLength / itemsPerPage)
-            //     currentPage = this.$route.params.page
-
-            //     return currentPage
-            // },
+            
         
         },
         watch: {

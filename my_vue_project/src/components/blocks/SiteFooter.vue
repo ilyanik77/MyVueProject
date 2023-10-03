@@ -4,10 +4,12 @@
         <div :class="[$style.content, $style.container]">
             <div :class="$style.content__interno">
                 <div :class="$style.logo">
-                    <a href="#">
+                    <router-link to="/HomePage">
+
                         <img src="@/assets/Logo.svg" alt="logo">
                         <img src="@/assets/Interno.svg" alt="logo">
-                    </a>
+
+                    </router-link>
                 </div>
                 <p :class="$style.content__interno__text">
                     It is a long established fact that a reader will be distracted lookings.
@@ -20,9 +22,11 @@
 
             <div :class="$style.pages">
                 <h3 :class="$style.pages__title">Pages</h3>
-                <a  :class="$style.pages__link" href="#">Home</a>
-                <a  :class="$style.pages__link" href="#">Project</a>
-                <a  :class="$style.pages__link" href="#">Blog</a>
+                
+                <router-link :class="$style.pages__link" to="/HomePage">Home</router-link>
+                <router-link :class="$style.pages__link" to="/ProjectPage">Project</router-link>
+                <router-link :class="$style.pages__link" to="/BlogPage">Blog</router-link>
+                
             </div>
 
             <div :class="$style.contacts">

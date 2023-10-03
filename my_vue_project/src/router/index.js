@@ -18,26 +18,37 @@ export default new router({
         name: 'homePage',
         component: HomePage
         },
+
         {
         path: '/BlogPage',
         component: BlogPage
         },
+
+        {
+        path: '/BlogPage/:page',
+        component: BlogPage
+        },
+
         {
         path: '/BlogPage/BlogDetailsPages/:id',
         component: BlogDetailsPage
         },
+
         {
         path: '/ProjectPage',
         component: ProjectPage,
         },
+
         {
         path: '/ProjectPage/:page',
         component: ProjectPage
         },
+
         {
         path: '/ProjectPage/ProjectDetailsPage/:id',
         component: ProjectDetailsPage
         },
+
         {
         path: '*',
         component: NotFound
